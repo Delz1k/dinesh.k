@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Progress</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/7186/7186954.png">
+<style>
+ h1 {
+    color:rgb(255, 111, 0);
+    text-align: center;
+    font-size:60px;
+    font-family: verdana;
+ }
+
+body {
+    background-color: #282525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+     position: relative;
+     text-align: center;
+     color:aqua;
+     border-top:2px solid rgb(255, 111, 0) ;
+     border-bottom:2px solid rgb(255, 111, 0)
+}
+
+.container_keyframes {
+    animation: container_keyframes 8.0s linear;
+		animation-iteration-count: infinite;
+}
+
+@keyframes container_keyframes {
+    100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0, 26, 255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+}
+
+.centered_right {
+
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size:50px ; 
+    font-style: oblique;
+    font-display: underline;
+}
+p {
+    color: rgb(255, 111, 0);
+    font-size:18.7px;
+}
+.centered_right_down {
+
+position: absolute;
+top: 58%;
+left: 28%;
+transform: translate(-50%, -50%);
+font-size: 50px;
+}
+
+h2 {
+    font-size:37px;
+    font-style: underline;
+    color:rgb(255, 111, 0);
+    float :left;
+
+}
+
+.img_movement {
+    float:right;
+    bottom:22px;
+    padding:45px;
+    right:860px;
+
+}
+.HTML_img_movement_type {
+    position:absolute;
+    right: 38px;
+    width:600px;
+    height: 280px;
+    top:175%;
+}
+.img-class{
+    position: absolute;
+    right: 380px;
+    width: 340px;
+    height: 240px;
+    top :196%;
+}
+.img-class2 {
+    position: absolute;
+    right:40px;
+    width:340px;
+    height:240px;
+    top:196%;   
+}
+
+
+
+h4 {
+  font-size:37px;
+    font-style: underline;
+    color:rgb(255, 111, 0);
+    float :left;
+    text-decoration: underline;
+
+}
+
+.imgclassCSS1 {
+  position: absolute;
+    right:6%;
+    width: 550px;
+    height: 290px;
+    top :240%;
+      
+}
+
+.imgclassCSS2 {
+  position: absolute;
+    right:20%;
+    width: 450px;
+    height: 230px;
+    top :267%;
+}
+
+.imgclassCSS3 {
+  position: absolute;
+  right:1%;
+  width:450px;
+  height: 230px;
+  top:267%;
+
+}
+
+h8 {
+  position:absolute;
+  left:1px;
+  top:2890px;
+
+  font-size:37px;
+  color:rgb(255, 111, 0);
+    font-style: underline;
+    float :left;
+    text-decoration: underline;
+
+}
+
+.barjsp {
+  position:absolute;
+  left:282px;
+  top:2900px;
+  
+}
+
+.imgclassJS1 {
+  position: absolute;
+    right:8.5%;
+    width: 550px;
+    height: 290px;
+    top :310%;
+}
+
+.imgclassJS2 {
+  position: absolute;
+    right:22.3%;
+    width: 450px;
+    height: 230px;
+    top :337%;
+}
+
+.imgclassJS3 {
+  position: absolute;
+  right:1%;
+  width:450px;
+  height: 230px;
+  top:337%;
+
+}
+
+.pclassend {
+  position: absolute;
+  top:3900px;
+  left:1px;
+  padding-top: 4px 4px;
+  border-top: 2px solid rgb(255, 111, 0);
+}
+
+a:link {
+  color:cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:rgb(0, 255, 229);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:rgb(255, 111, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color:red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 2;
+  position: relative;
+  margin: auto;
+  border: 7px solid rgb(255, 111, 0);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-image: cover;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: rgb(255, 111, 0);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-decoration: overline,;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 111, 0);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.nameavatar {
+  border-radius: 50%;
+  width:60.5px;
+  height:60px;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
+.stickNav {
+  position: fixed;
+  top:0;
+  bottom:0;
+  width: 100%;
+}
+
+.icon-bar a {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(255, 111, 0);
+  font-size: 36px;
+  opacity: 1;
+}
+
+.icon-bar a:hover {
+  background-color: rgba(1, 0, 0, 0.8);
+}
+
+.active {
+  background-color: rgb(0, 0, 0);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 111, 0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: cyan;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  position: absolute;
+  top:35px;
+  left:1px;
+  transition: margin-left .5s;
+  padding: 16px;
+  color:rgb(255, 111, 0)
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#myEndTop {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+  border: none;
+  outline: none; 
+  background-color: rgb(40, 37, 37,0.33); 
+  opacity: 6px;
+  color: rgb(255, 111, 0);
+  opacity: 1; 
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  
+}
+
+#myEndTop:hover {
+  background-color: black;
+}
+
+.progressheader {
+  position: fixed;
+  top:0px;
+  z-index: 1;
+  width: 100%;
+  background:white;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgb(40,37,37);
+}
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: cyan;
+  width: 0%;
+  
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  position: absolute;
+  top:670px;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: black;
+  color:rgb(255, 111, 0);
+  font-size: 18px;
+  transition: 0.2s;
+  width: 100%;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: black;
+  color:rgb(255, 111, 0);
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: rgba(255, 17, 0, 0.8);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: rgb(0, 255, 229,0.8);
+  color: black;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: rgb(255, 111, 0);
+  color:rgb(0, 255, 229,0.8) ;
+}
+
+/* Style the to do list */
+.to_do_list {
+  position:absolute;
+    top:3530px;
+  background-color: black;
+  padding: 30px 40px;
+  color: black;
+  font-style: bold;
+  text-align: center;
+  width: 100%;
+}
+
+/* Clear floats after the to do list */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  position: absolute;
+  top:18px;
+  left:1px;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  background: black;
+  color: rgb(255, 111, 0);
+}
+
+/* Style the "Add" button */
+.addBtn {
+  position: absolute;
+  top:18px;
+  right:1px;
+  padding: 10px;
+  width: 25%;
+  background: black;
+  color: rgb(255, 111, 0);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: rgb(255,0,0);
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+} 
+
+.badge_Updated {
+  position: absolute;
+  top:60px;
+  left:1080px;
+  font-size: 22px;
+  height:40px;
+  background-color: lime;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.badge_toolbar_tag {
+  position: absolute;
+  top:90px;
+  right: 12px;
+  background-color: blue;
+  color: white;
+  padding: 29px 2px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.badge_slideshow_tag {
+  position: absolute;
+  top:300px;
+  right: 365px;
+  background-color: blue;
+  color:white ;
+  padding: 10px 2px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.badge_userprofile_tag {
+  position: absolute;
+  top:830px;
+  right: 165px;
+  background-color: cyan;
+  color:black;
+  padding: 14px 1px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.badge_worktodo_tag {
+  position: absolute;
+  top:3480px;
+  left:1700px;
+  background-color: cyan;
+  color:black;
+  padding: 14px 1px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+    <h1> Project</h1>
+    <script>
+    window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("pclassend").style.width = scrolled + "%";
+}
+
+</script>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#h2">HTML</a>
+      <a href="#h4">CSS</a>
+      <a href="#h8">JavaScript</a>
+      <a href="#pclassend">THE END</a>
+      <a href="#input">To do list</a>
+    </div>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; SideNavigation <span class="badge">New</span> </span>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgb(0,0,0,)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "#282525";
+      }
+      </script>    
+    <div class="icon-bar ">
+      <a class="active" href="#h2">HTML<i class="fa fa-home"></i></a> 
+      <a href="#h4">CSS<i class="fa fa-CSS"></i></a> 
+      <a href="#h8">JavaScript<i class="fa fa-JS"></i></a> 
+      <a href="#"><i class="fa fa-note"></i></a> 
+    </div>
+    <p>Hello,Welcome to project.First I would like to express a few lines about it.Showing the Progress of website and in langauages</p>
+    
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img  src="https://media.licdn.com/dms/image/D4D12AQEaTK5_cv5Fmg/article-cover_image-shrink_720_1280/0/1677082453584?e=2147483647&v=beta&t=hy4wcIl2vOpp5lr5k74obYVN63IT-U4lydNOIo3hHGo" style="width:100%;height:500px;">
+    <div class="text">About HTML Progress</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="https://www.shutterstock.com/image-illustration/css-code-on-dark-background-600nw-1893752428.jpg" style="width:100%" style="width:100%">
+    <div class="text">About CSS Progress</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="https://st2.depositphotos.com/4021139/7394/i/450/depositphotos_73942239-stock-photo-javascript-concept.jpg" style="width:100%">
+    <div class="text">About JavaScript Progress</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="https://flikover.tech/wp-content/uploads/2019/12/udemy-flikover-image.png" style="width:100%">
+    <div class="text">This website is Helped by Udemy.com</div>
+  </div>
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>  
+  </div>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+
+
+    <div class="container">
+        <img src="https://blogs.halodoc.io/content/images/2023/03/70.-Design_Patterns_in_Angular_Applications.png" style="width:2000px;height:650px;">
+        <div class="centered_right container_keyframes"><b> <ins> Hello Dinesh<img class="nameavatar" src="C:\Users\LENOVO\Desktop\kathirrrrrr\WhatsApp Image 2023-11-26 at 6.30.40 PM.jpeg"></ins></b></div>
+        <div class="centered_right_down container_keyframes"> Welcome to your <ins>progress page</ins></div>
+    </div>
+     <h2 id="h2"> <ins> HTML:-</ins></h2>
+    <br/>
+    <br/>
+     <p >Progress on HTML in a Line graph Source Code </p>
+    <div class="HTML_img_movement_type"><img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.webp" style="width:85%;height:220px;"> </div>
+    <img class="img-class" src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" >
+    <img class="img-class2" src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHRtbHxlbnwwfHwwfHx8MA%3D%3D">
+    <br/>
+
+    <canvas id="myChart" style="width:200%;max-width:50%;height:500px;max-height:25%;"></canvas>
+
+    <script>
+        const xValues = [0,10,20,30,40,50,60,70,80,90,100];
+        const yValues = [0,10,22,22,30,31,31,49,66,66,74];
+        
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(0, 0, 0)",
+              borderColor: "cyan",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 0, max:100}}],
+            }
+          }
+        });
+        </script>
+
+        
+        <h4 id="h4"><ins> CSS:-</ins></h3>
+        <br/>
+        <br/>
+        <br/>
+        <p >Progress on CSS in a Line graph Source Code </p>
+        <img class="imgclassCSS1" src="https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8.jpg">
+        <img class="imgclassCSS2" src=" https://learn.g2crowd.com/hubfs/iStock-987365514.jpg">
+        <img class="imgclassCSS3" src="https://st2.depositphotos.com/4021139/7394/i/450/depositphotos_73943117-stock-photo-css-concept.jpg">
+
+        <br/>
+        <br/>
+
+
+        <canvas id="myCSSChart" style="width:200%;max-width:50%;height:500px;max-height:25%;float:left;"></canvas>
+        <br/>
+    <script>
+        const xyValues = [0,10,20,30,40,50,60,70,80,90,100];
+        const yxValues = [0,10,22,28,30,31,44,49,66,73,88];
+        
+        new Chart("myCSSChart", {
+          type: "line",
+          data: {
+            labels: xyValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(0, 0, 0)",
+              borderColor: "cyan",
+              data: yxValues
+              
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 0, max:100}}],
+            }
+          }
+        });
+        </script>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        <br/>
+        <br/>
+        <h8 id="h8"><ins> JS-JavaScript:-</ins></h8>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <br/>
+        <br/>
+
+
+        <br/>
+        <br/>
+        <br/><br/>
+        <br/>
+
+        <br/>
+        <br/>
+
+        <br/><br/>
+        <br/>
+        <br/>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p class="barjsp" >Progress on JS-JavaScript in a Line graph Source Code </p>
+        <img class="imgclassJS1" src="https://blog.talent500.co/wp-content/uploads/2023/01/Skills-you-need-to-get-a-job-as-a-JavaScript-developer-1.png">
+        <img class="imgclassJS2" src="https://www.devstringx.com/wp-content/uploads/2023/01/BANNER.jpg">
+        <img class="imgclassJS3" src="https://images.idgesg.net/images/article/2023/04/shutterstock_1361674454-100939444-large.jpg?auto=webp&quality=85,70">
+        <canvas id="myJSChart" style="width:200%;max-width:50%;height:500px;max-height:25%;float:left;"></canvas>
+        <br/>
+        <script>
+         const xyzValues = [0,10,20,30,40,50,60,70,80,90,100];
+        const yxzValues = [0,10,22,22,30,31,31,10,10,31,55];
+
+         new Chart("myJSChart", {
+          type: "line",
+          data: {
+         labels: xyzValues,
+         datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgb(0, 0, 0)",
+          borderColor: "cyan",
+          data: yxzValues
+        
+      }]
+    },
+         options: {
+        legend: {display: false},
+        scales: {
+        yAxes: [{ticks: {min: 0, max:100}}],
+      }
+    }
+  });
+  </script>
+  <button onclick="topFunction()" id="myEndTop" title="Go to top">To Top <span class="badge">New </span></button>
+  <script>
+let mybutton = document.getElementById("myEndTop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div id="WorktoDo" class="to_do_list">
+  <h10 style="margin:5px"><b>My To Do List</b></h10>
+  <input type="text" id="myInput" placeholder="Work...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+<ul id="Myworks">
+  <li>HTML Web Developing</li>
+  <li class="checked">CSS</li>
+  <li>Javascript Editing</li>
+  <li>C [waste]</li>
+</ul>
+<script>
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("LI");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+  
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+  
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+  </script>
+  
+
+  <p class="pclassend"> The progress is over .Thank You for watching my project Helped by Jones Schmedttmann,you can watch his information on <span style="color:orange;">GITHUB:-</span> <a href="https://github.com/">https://github.com/</a>.com. The end of the progress Below this Paragraph ,there is footer box where you can join in various types of links<span style="color: red;"> [current updating it]</span> .You can move through different links from the footer</p>
+</body>
+</html>
